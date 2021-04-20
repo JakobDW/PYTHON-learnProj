@@ -3,15 +3,17 @@
 import re
 
 def fun(tex,con):
-    check = re.compile(con) #look for grups of small letters
+    check = re.compile('[a-z]') #look for grups of small letters
 
-    result = check.findall(tex)
+    result = check.search(tex)
 
     print(result)
 
 
+
 text ='Suchą szosą69 szła Sasza'
 
-cond = '\w\w\w\d'
+cnd =r'(a-z)+'
 
-fun(text,'\w\w\w\d')
+fun(text, cnd)
+
