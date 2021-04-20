@@ -3,22 +3,20 @@ import re
 
 
 
-def isIncluding(condition, text):
+def isIncluding(condition, text): #Get condition str to test and str to test
   
-
- 
     regEx = re.compile(condition)
 
     res = regEx.search(text)
 
-    if res == None:
+    if res == None:               #Function return False if condition str was not found in password str
         return  False
     else:
         return  True
 
 
 
-def passwordTest(password):
+def passwordTest(password):       #Call isIncluding for different conditions you want to test
     
     if len(password)<8:
         return False
@@ -31,7 +29,7 @@ def passwordTest(password):
     if isIncluding('[!@#$%^&*]',password) == False:
         return False
     else:
-        return True
+        return True               #Return True if all conditions are True
 
 
 
