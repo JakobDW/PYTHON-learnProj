@@ -1,2 +1,2 @@
-Wczoraj PRZYMIOTNIK panda weszla na RZECZOWNIK i zaczela CZASOWNIK.
-Pobliska RZECZOWNIK nie ucierpiala na skutek tych dzialan.
+Wczoraj NOUN panda weszla na ADJECTIVE i zaczela VERB.
+Pobliska ADVERB nie ucierpiala na skutek tych dzialan.

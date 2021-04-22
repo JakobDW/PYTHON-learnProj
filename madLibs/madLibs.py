@@ -2,15 +2,18 @@
 
 import re
 
-def swaper(key_list,ansDict,sentence):
-    for i in range(len(key_list)):
+def swaper(keyList, ansDict, sentence):
+    
+    newSen =''
 
+    for i in range(len(keyList)):
+
+       
        spl = sentence.split(keyList[i])
 
-       newSen = spl[0] + ansDict[i] + spl[1]
+       newSen = spl[0] + ansDict[keyList[i]] + spl[1]
 
-       return newSen
-
+    return newSen
 
 sentenceFile = open('sentence.txt','r')
 
@@ -39,10 +42,14 @@ words['ADVERB'] = input()
 
 #TODO find those in text and swap them with user definitions
 
+
 keysList = list(words.keys())
 
 
-
-
+finalMess = swaper(keysList, words, sentence)
 
 #TODO print the results
+
+print()
+print(finalMess)
+
