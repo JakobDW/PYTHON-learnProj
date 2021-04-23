@@ -1,11 +1,11 @@
 #textFilesOverview.py - find user defined str 
 #                       in lines of
-#                       all text files
-#                       in user defined directory
+#                       one or multiple text files
+#                       in user indicated directory
                         
 ################################################################################################################################################################
 
-import re, os
+import re, os, pprint
 
 print('Current working directory:')                                                                             #Print cwd
 print(os.getcwd())
@@ -79,7 +79,11 @@ if not txtFileList:
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Define regEx you want to look for in those files and 
 else:
+    print()
+    print()
     print('Define regular expression to look for(remember of \'\')')                                             #As described
+    print()
+    print()
     reg = input()
 
     regEx = re.compile(reg)
@@ -103,5 +107,11 @@ else:
 ################################################################################################################################################################
 
       
-print (discMachLines)
+formated = pprint.pformat(discMachLines)
 
+print(formated)
+print()
+print()
+
+#TODO Convert modules into functions
+#Count number of line and display it also 
