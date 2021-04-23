@@ -56,7 +56,7 @@ print()
 fileList = os.listdir(os.getcwd())                                                                              #get list of files from cwd
 ################################################################################################################################################################
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Select text files from fileList
+#Separate text files from fileList
 
 txtFileList = []
 
@@ -87,18 +87,21 @@ else:
     discMachLines={}
 
     for file in txtFileList:                                                                                     #For every file on txtFileList
-        openFile = open(file,r)                                                                                  #Open to read
-        fileInLines = openFile.redlines()                                                                        #Save to list in lines
+        openFile = open(file,'r')                                                                                #Open to read
+        fileInLines = openFile.readlines()                                                                       #Save to list in lines
         openFile.close()                                                                                         #Close
         for line in fileInLines:                                                                                 #For every line in fileInLines
             res = regEx.search(line)                                                                             #Search for maching regular expression
             if res != None:                                                                                      #If found mach
-                discMachLines[file]+=line                                                                        #Save line under according key in dictionary
+                if file in discMachLines:
+                    discMachLines[file] += line
+                else:
+                    discMachLines[file] = line                                                                   #Save line under according key in dictionary
 
 #End of searchng through text files lines
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ################################################################################################################################################################
 
       
-
+print (discMachLines)
 
