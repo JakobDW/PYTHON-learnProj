@@ -14,38 +14,38 @@ print()
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Loop to decide cwd
 
+def getCwd():
 
+    while(True):                                                                                                    #Ask if cwd is ok or change to user defined cwd
 
-while(True):                                                                                                    #Ask if cwd is ok or change to user defined cwd
+        print('Provide new cwd(if no, press enter):')
 
-    print('Provide new cwd(if no, press enter):')
+        cwd=''
 
-    cwd=''
+        cwd = input()
 
-    cwd = input()
+        if cwd != '':                                                                                               #If user defined new cwd
 
-    if cwd != '':                                                                                               #If user defined new cwd
+            ex = os.path.exists(cwd)                                                                                #Check if path exists
 
-        ex = os.path.exists(cwd)                                                                                #Check if path exists
+            dir = os.path.isdir(cwd)                                                                                #Check if path lead to directory
 
-        dir = os.path.isdir(cwd)                                                                                #Check if path lead to directory
+            if ex == True and dir == True:                                                                          #If both is true change cwd
+                os.chdir(cwd)
+                print()
+                print('Current working directory:')
+                print(os.getcwd())
+                print()
 
-        if ex == True and dir == True:                                                                          #If both is true change cwd
-            os.chdir(cwd)
+                break
+
+            else:
+                print('Incorrect cwd path')
+                print()
+        else:                                                                                                       #If cwd not to be changed break
             print()
-            print('Current working directory:')
-            print(os.getcwd())
-            print()
-
             break
-
-        else:
-            print('Incorrect cwd path')
-            print()
-    else:                                                                                                       #If cwd not to be changed break
-        print()
-        break
-
+getCwd()
 #End loop to decide cwd
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ################################################################################################################################################################
@@ -81,7 +81,7 @@ if not txtFileList:
 else:
     print()
     print()
-    print('Define regular expression to look for(remember of \'\')')                                             #As described
+    print('Define regular expression to look for(remember of \'double\\\')')                                             #As described
     print()
     print()
     reg = input()
@@ -114,4 +114,6 @@ print()
 print()
 
 #TODO Convert modules into functions
-#Count number of line and display it also 
+#TODO Count number of line and display it also 
+
+################################################################################################################################################################
