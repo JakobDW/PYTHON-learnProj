@@ -53,7 +53,7 @@ print('Current working directory:')
 print(os.getcwd())
 print()
 
-fileList = os.listdir(os.getcwd())                                                                              #get list of files from cwd
+fileList = os.listdir('.')                                                                              #get list of files from cwd
 ################################################################################################################################################################
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Separate text files from fileList
