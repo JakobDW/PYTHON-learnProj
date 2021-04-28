@@ -1,8 +1,7 @@
 #Finished reusable functions
 ###########################################################################################################################################################################
 ###########################################################################################################################################################################
-#Ask user to provide working directory. Default cwd is program file directory
-
+#Ask user to provide working directory. Default cwd is file directory
 def getCwd():
 
     while(True):                                                                                                    #Ask if cwd is ok or change to user defined cwd
