@@ -1,7 +1,6 @@
 ############################################################################################################################################################################
 #Copy files of choosen format to desired folder(or new folder)
 import os, shutil, re
-from pathlib import Path
 ############################################################################################################################################################################
 ############################################################################################################################################################################
 def getCwd():
@@ -40,30 +39,30 @@ def getCwd():
 ############################################################################################################################################################################
 ############################################################################################################################################################################
 
-#TODO Define directory to walk thru ---
+#Define directory to walk thru 
 getCwd()
 
-#TODO Define where to copy ---
+#Define where to copy 
 print('Define path to backup directory')
 print()
 copyDirPath = input()
 
-#TODO check if copyDirPath existts and is directory and if not, create it ---
+#Check if copyDirPath exists and if not, create it
 
 if not os.path.exists(copyDirPath):
     os.makedirs(copyDirPath)
 
 
-#TODO Define extension of files to copy
+#Define extension of files to copy
 print('Define type of files to copy(ex: \.pdf)')
 print()
 extension = input()
 
-#TODO create regEx ---
+#Create regEx 
 
 regEx = re.compile(extension)
 
-#TODO  walk thru cwd and for every file name do regEx. If mach is  found copy this file to backup directory
+#Walk thru cwd and for every file name do regEx. If mach is  found copy this file to backup directory
 
 top = os.getcwd()
 
@@ -72,7 +71,6 @@ for dirName, subDirs, fileNames in os.walk(os.getcwd()):
         os.chdir(dirName)
         mach = regEx.search(fileName)
         if mach != None:
-            #shutil.copy(os.path.abspath(fileName),copyDirPath)
             shutil.copy(os.path.abspath(fileName),copyDirPath)
         os.chdir(top)
 ############################################################################################################################################################################
