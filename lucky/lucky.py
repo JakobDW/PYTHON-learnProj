@@ -1,5 +1,5 @@
 #! python3
-#Different tests
+#Open few new tabs in chrome to with search results of command interface arguments
 
 import sys, requests, webbrowser, logging, bs4
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
