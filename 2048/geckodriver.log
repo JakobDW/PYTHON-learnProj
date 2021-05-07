@@ -1,0 +1,42 @@
+1620389399789	geckodriver	INFO	Listening on 127.0.0.1:62822
+1620389402824	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Kuba\\AppData\\Local\\Temp\\rust_mozprofilewps1bI"
+1620389403253	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620389405141	Marionette	INFO	Listening on port 62830
+1620389405468	Marionette	WARN	TLS certificate errors will be ignored for this session
+1620389450045	Marionette	INFO	Stopped listening on port 62830
+1620389505325	geckodriver	INFO	Listening on 127.0.0.1:63019
+1620389508392	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Kuba\\AppData\\Local\\Temp\\rust_mozprofilel300po"
+1620389508805	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620389510326	Marionette	INFO	Listening on port 63027
+1620389510467	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 10200, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+1620389521431	Marionette	INFO	Stopped listening on port 63027
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1620389694149	geckodriver	INFO	Listening on 127.0.0.1:63148
+1620389697208	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Kuba\\AppData\\Local\\Temp\\rust_mozprofile6s0eK2"
+1620389697637	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620389699430	Marionette	INFO	Listening on port 63156
+1620389699891	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s0.2mdn.net/879366/html_inpage_rendering_lib_200_271.js, line 61: TypeError: this.a is undefined
+JavaScript error: https://s0.2mdn.net/879366/html_inpage_rendering_lib_200_271.js, line 61: TypeError: this.a is undefined
+1620389730688	Marionette	INFO	Stopped listening on port 63156
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1620389733927	geckodriver	INFO	Listening on 127.0.0.1:63342
+1620389736986	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Kuba\\AppData\\Local\\Temp\\rust_mozprofileFftKIE"
+1620389737439	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620389738946	Marionette	INFO	Listening on port 63350
+1620389739029	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s0.2mdn.net/879366/html_inpage_rendering_lib_200_271.js, line 61: TypeError: this.a is undefined
+JavaScript error: https://s0.2mdn.net/879366/html_inpage_rendering_lib_200_271.js, line 61: TypeError: this.a is undefined
+1620389779741	Marionette	INFO	Stopped listening on port 63350
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
